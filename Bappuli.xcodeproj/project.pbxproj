@@ -10,9 +10,29 @@
 		DFFEE8A52E62329900CF3C75 /* Bappuli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bappuli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DFFEE8E82E6235DF00CF3C75 /* Exceptions for "Bappuli" folder in "Bappuli" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/character.gif,
+				Resources/sleep.gif,
+				Resources/sleepless.mp3,
+				Sources/Data/.gitkeep,
+				Sources/DesignSystem/.gitkeep,
+				Sources/Domain/.gitkeep,
+				Sources/Network/.gitkeep,
+				Sources/Util/.gitkeep,
+			);
+			target = DFFEE8A42E62329900CF3C75 /* Bappuli */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DFFEE8A72E62329900CF3C75 /* Bappuli */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DFFEE8E82E6235DF00CF3C75 /* Exceptions for "Bappuli" folder in "Bappuli" target */,
+			);
 			path = Bappuli;
 			sourceTree = "<group>";
 		};
@@ -261,6 +281,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +310,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
