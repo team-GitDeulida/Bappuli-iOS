@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DFFEE8F12E623CF800CF3C75 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFFEE8F02E623CF800CF3C75 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DFFEE8A52E62329900CF3C75 /* Bappuli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bappuli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFEE8F02E623CF800CF3C75 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -52,6 +57,7 @@
 		DFFEE89C2E62329900CF3C75 = {
 			isa = PBXGroup;
 			children = (
+				DFFEE8F02E623CF800CF3C75 /* README.md */,
 				DFFEE8A72E62329900CF3C75 /* Bappuli */,
 				DFFEE8A62E62329900CF3C75 /* Products */,
 			);
@@ -129,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFEE8F12E623CF800CF3C75 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
