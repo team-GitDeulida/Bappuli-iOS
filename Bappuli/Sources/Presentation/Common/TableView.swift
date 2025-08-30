@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct TableView: View {
+    let angle: Double
+    let lineWidth: CGFloat
     var body: some View {
-        Diagonal(angle: Angle.degrees(-3.0),
+        Diagonal(angle: Angle.degrees(angle),
                  color: Color.black,
-                 lineWidth: 3)
+                 lineWidth: lineWidth)
     }
 }
 
 #Preview {
-    TableView()
+    TableView(angle: -3.0, lineWidth: 3)
 }

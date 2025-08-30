@@ -11,35 +11,43 @@ struct ContentView: View {
     @State private var bappuli = Bappuli(state: .working)
     
     var body: some View {
-        ZStack() {
-            // MARK: - 전체 배경
-            Color.white
-                .ignoresSafeArea()
+        GeometryReader { proxy in
             
-            // MARK: - 창문 배치
-            VStack {
-                HStack {
-                    WindowView()
+            // MARK: - 크기
+            let screenWidth = proxy.size.width
+            let windowSize  = screenWidth * 0.3 // 화면 가로의 30%
+            
+            ZStack() {
+                // MARK: - 전체 배경
+                Color.white
+                    .ignoresSafeArea()
+                
+                // MARK: - 창문 배치
+                VStack {
+                    HStack {
+                        WindowView(size: windowSize)
+                        Spacer()
+                    }
                     Spacer()
                 }
-                Spacer()
-            }
-            
-            // MARK: - 테이블 배치
-            VStack {
-                Spacer()
-                TableView()
-                    .padding(.bottom, 90)
-            }
-            .ignoresSafeArea()
-            
-            // MARK: - 밥풀이
-            VStack {
-                Spacer()
-                GifRenderView(gifName: bappuli.gifName,
-                              targetSize: CGSize(width: 80, height: 80))
-                .frame(maxWidth: 200, maxHeight: 200)
-                .padding(.bottom, 25)
+                
+                // MARK: - 테이블 배치
+                VStack {
+                    Spacer()
+                    TableView(angle: -3,
+                              lineWidth: 5)
+                        .padding(.bottom, 90)
+                }
+                .ignoresSafeArea()
+                
+                // MARK: - 밥풀이
+                VStack {
+                    Spacer()
+                    GifRenderView(gifName: bappuli.gifName,
+                                  targetSize: CGSize(width: 200, height: 200))
+                    .frame(width: 200, height: 200)
+                    .padding(.bottom, 25)
+                }
             }
         }
     }
@@ -48,3 +56,7 @@ struct ContentView: View {
 #Preview(traits: .landscapeRight) {
     ContentView()
 }
+
+
+
+

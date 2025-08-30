@@ -20,6 +20,6 @@ struct TestView: View {
     }
 }
 
-#Preview(traits: .landscapeRight) {
+#Preview {
     TestView()
 }

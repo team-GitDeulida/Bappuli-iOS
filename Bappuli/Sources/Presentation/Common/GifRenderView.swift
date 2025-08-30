@@ -62,6 +62,6 @@ struct GifRenderView: UIViewRepresentable {
 
 #Preview {
     GifRenderView(gifName: "character",
-                  targetSize: CGSize(width: 80, height: 80))
+                  targetSize: CGSize(width: 200, height: 200))
     .frame(width: 200, height: 200)
 }
