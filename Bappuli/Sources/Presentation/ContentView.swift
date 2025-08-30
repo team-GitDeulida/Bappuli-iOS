@@ -9,12 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ImageButton(imageName: "record",
-                        size: 70,
-                        flipped: true) {
-                print("버튼 클릭됨")
+        ZStack(alignment: .topLeading) {
+            // MARK: - 전체 배경
+            Color.white
+                .ignoresSafeArea()
+            
+            // MARK: - 테이블 배치
+            VStack {
+                Spacer()
+                TableView()
+                    .ignoresSafeArea()
+                    .padding(.bottom, 50)
             }
+            
+            // MARK: - 창문 배치
+            WindowView()
         }
     }
 }
