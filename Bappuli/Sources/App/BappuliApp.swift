@@ -12,6 +12,10 @@ struct BappuliApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    let bounds = UIScreen.main.bounds
+                    DynamicSize.setScreenSize(bounds)
+                }
         }
     }
 }
