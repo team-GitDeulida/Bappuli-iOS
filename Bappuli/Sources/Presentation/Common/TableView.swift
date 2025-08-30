@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TableView: View {
     var body: some View {
-        Diagonal(angle: Angle.degrees(-2.5),
+        Diagonal(angle: Angle.degrees(-3.0),
                  color: Color.black,
                  lineWidth: 3)
     }

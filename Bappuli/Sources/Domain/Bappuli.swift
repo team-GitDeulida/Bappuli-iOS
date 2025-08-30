@@ -10,7 +10,7 @@ import Foundation
 struct Bappuli {
     enum State: String {
         case working
-        case sleepping
+        case sleeping
     }
     
     // TODO: - 
@@ -19,7 +19,7 @@ struct Bappuli {
         case pajamas
     }
     
-    var state: State = .sleepping
+    var state: State = .sleeping
     
     var gifName: String {
         return state.rawValue

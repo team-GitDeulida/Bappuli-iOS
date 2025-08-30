@@ -19,8 +19,6 @@
 		DFFEE8E82E6235DF00CF3C75 /* Exceptions for "Bappuli" folder in "Bappuli" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Resources/character.gif,
-				Resources/sleep.gif,
 				Resources/sleepless.mp3,
 				Sources/Data/.gitkeep,
 				Sources/DesignSystem/.gitkeep,
