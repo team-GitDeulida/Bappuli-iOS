@@ -27,7 +27,9 @@ struct WindowView: View {
             .resizable()                          // 이미지 크기 조절 가능하게
             .aspectRatio(contentMode: .fit)       // 원본 비율 유지 (잘리지 않음)
             // .background(Color.red)                // 배경 빨간색
-            .padding(-20)                         // -20만큼 잘라냄
+            // .padding(-20)                         // -20만큼 잘라냄
+            .scaleEffect(1.2)              // 확대
+            .offset(x: 0, y: -10)          // 위치 보정
             .frame(width: size, height: size)     // size×size 고정 배치
             .clipped()                            // frame 밖 잘라냄
     }

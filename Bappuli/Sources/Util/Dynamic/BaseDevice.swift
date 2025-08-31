@@ -50,6 +50,13 @@ public enum BaseDevice {
     case iPhone16Plus
     case iPhone16Pro
     case iPhone16ProMax
+    
+    // MARK: - iPad 시리즈
+    case iPadMini6
+    case iPadAir5
+    case iPadPro11
+    case iPadPro12_9
+    case iPadPro13
 
     public var size: CGSize {
         switch self {
@@ -89,6 +96,13 @@ public enum BaseDevice {
         case .iPhone16Plus:                return CGSize(width: 430, height: 932)
         case .iPhone16Pro:                 return CGSize(width: 402, height: 874)
         case .iPhone16ProMax:              return CGSize(width: 440, height: 956)
+            
+        // MARK: - iPad
+        case .iPadMini6:     return CGSize(width: 744, height: 1133)   // iPad mini 6 (8.3")
+        case .iPadAir5:      return CGSize(width: 820, height: 1180)   // iPad Air 5 (10.9")
+        case .iPadPro11:     return CGSize(width: 834, height: 1194)   // iPad Pro 11"
+        case .iPadPro12_9:   return CGSize(width: 1024, height: 1366)  // iPad Pro 12.9"
+        case .iPadPro13:     return CGSize(width: 1024, height: 1366)
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public struct DynamicSize {
     // MARK: - 기준 기기 (default: iPhone 15 Pro Max)
@@ -15,7 +16,13 @@ public struct DynamicSize {
     /// 앱 시작 시, 현재 디바이스 screen bounds 및 기준 디바이스를 설정
     public static func setScreenSize(_ newBounds: CGRect, baseDevice: BaseDevice = .iPhone15ProMax) {
         self.bounds = newBounds
-        self.baseSize = baseDevice.size
+        
+        // ✅ 아이패드일 경우 iPad Pro 12.9 기준으로 잡기
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            self.baseSize = BaseDevice.iPadPro13.size
+        } else {
+            self.baseSize = baseDevice.size
+        }
     }
 
     /// 현재 기기 화면 너비

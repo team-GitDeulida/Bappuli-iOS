@@ -20,12 +20,9 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				Resources/sleepless.mp3,
 				Sources/Data/.gitkeep,
-				Sources/DesignSystem/.gitkeep,
 				Sources/Domain/.gitkeep,
 				Sources/Network/.gitkeep,
-				Sources/Util/.gitkeep,
 			);
 			target = DFFEE8A42E62329900CF3C75 /* Bappuli */;
 		};

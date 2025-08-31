@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct BappuliApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .onAppear {
-                    let bounds = UIScreen.main.bounds
-                    DynamicSize.setScreenSize(bounds)
+                    // let bounds = UIScreen.main.bounds
+                    // DynamicSize.setScreenSize(bounds)
                 }
         }
     }
