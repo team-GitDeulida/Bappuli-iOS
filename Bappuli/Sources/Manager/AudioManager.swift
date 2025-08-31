@@ -14,7 +14,6 @@ final class AudioManager {
         prepare(fileName: "sleepless", fileType: "mp3")
     }
     
-    
     /// 오디오 플레이어 초기화
     /// - Parameters:
     ///   - fileName: 파일 이름
