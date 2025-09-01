@@ -11,5 +11,9 @@
     <array>
         <string>audio</string>
     </array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>OwnglyphMeetme.ttf</string>
+    </array>
 </dict>
 </plist>

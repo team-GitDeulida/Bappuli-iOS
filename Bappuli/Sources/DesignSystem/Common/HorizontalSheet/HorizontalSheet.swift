@@ -23,8 +23,6 @@ struct HorizontalSheet<MenuContent: View>: ViewModifier {
                     menuContent()
                         .frame(width: geo.size.width * 0.2,
                                height: geo.size.height)
-//                        .frame(width: min(geo.size.width * 0.8, 150),
-//                               height: geo.size.height)
                         .overlay(
                             Divider()
                                 .frame(width: 3)
