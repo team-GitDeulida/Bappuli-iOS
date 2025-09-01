@@ -15,10 +15,12 @@ struct MusicNote: Identifiable {
 
 struct RecordButton: View {
     @ObservedObject var viewModel: RecordViewModel
+    var action: () -> Void?
+    
 
     var body: some View {
         ImageButton(imageName: "record", size: 100, flipped: true) {
-            viewModel.togglePlay()
+            action()
         }
         // MARK: - 레코드 버튼의 위치 추적기
         .background(                    /// background 안에 뷰를 넣으면 그 뷰는 뒤에 깔리면서 원래 뷰와 같은 크기를 가짐
